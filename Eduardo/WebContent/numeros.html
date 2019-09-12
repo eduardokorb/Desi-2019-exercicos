@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Soma dos Números</title>
+</head>
+<body>
+	<h1>Soma dos valores</h1>
+	<p>Somamos os valores de X,Y e Z</p>
+	<ul>
+		<li> X=10
+		<li> Y=20
+		<li> Z=50
+	</ul>	
+
+	<script>
+		var x = 10;
+		var y = 20
+		var z = 50
+		var soma = x+y+z
+		document.write("A soma dos 3 valores é " + soma + "</br>");
+		var media = soma/3;
+		document.write("A média dos 3 valores é " + media + "</br>");
+		var valor1 = 200;
+		var valor2 = 300;
+		var soma1 = valor1 + valor2;
+		document.write("R$ "+soma1 + ",00" + "</br>");
+		</script>
+		
+	
+    	<legend>Cálculo do salário</legend>
+    	<label>Salário:</label>
+    	<input id="salario">
+    	<label>Meses trabalhados: </label>
+    	<input id="meses">
+    	<button id="somar" onclick="somarValores()">Somar</button>
+  
+		
+		<script>
+    function somarValores(){
+        var s1 = document.getElementById("salario").value;
+        var s2 = document.getElementById("meses").value;
+        var s3 = parseInt(s2) + 2;
+        var s4 = parseInt(s1)*s3;
+        alert("Seus rendimentos anuais com férias e 13º salário é: " + s4);
+    }
+</script>
+</body>
+</html>
